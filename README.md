@@ -36,4 +36,3 @@ Los numeros primos son:
 3. Empezando por el 2, se marcan como no primos todos sus múltiplos. Se repite con el siguiente número no marcado, hasta llegar a la raíz cuadrada del límite.
 4. Los números que quedan sin marcar son los primos.
 
-Complejidad: O(n log log n).
