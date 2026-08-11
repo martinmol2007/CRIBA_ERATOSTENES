@@ -9,8 +9,8 @@ Programa en C++ que calcula todos los números primos hasta un número dado usan
 ## Compilar y ejecutar
 
 ```
-g++ main.cc -o main
-./main
+g++ main.cc -o main.exe
+./main.exe
 ```
 
 ## Uso
