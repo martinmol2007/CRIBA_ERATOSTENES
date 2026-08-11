@@ -36,15 +36,18 @@ vector<int> conseguir_primos (vector<int>& v, int num) {
     vector<int> res;
 
     // Comprueba si son primos
-    for(int i = 2; i*i <= num; i++) {
-        // Si lo es (no es 0), añadelo al vector resultado
+    for(int i = 2; i*i <= num; i++) {  
         if(v[i] != 0) {
-            res.push_back(v[i]);
             // Pon a 0 todos sus multiples
             for(int j = i * i; j <= num; j += i) {
                 v[j] = 0;
             }
         }
+    }
+
+    // Añade todo los primos que quedan
+    for(int i = 2; i <= num; i++) {
+        if(v[i] != 0) res.push_back(v[i]);
     }
 
     return res;
