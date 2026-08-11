@@ -74,8 +74,8 @@ int main() {
         }
     }
 
-    // Vector de tamaña del numero indicado y asigna todos los numeros posibles
-    vector<int> vec(num);
+    // Vector de tamaño num+1 (indices 0..num) y asigna todos los numeros posibles
+    vector<int> vec(num + 1);
     rellenar_vector(vec, num);
 
     // Consigue los primos
